@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module ALU 
 (
 	//Entradas
@@ -42,7 +43,7 @@ begin
 		//NOR
 		4'b1100 :
 		begin
-			assign R = ~ ( A | B );
+			R = ~ ( A | B );
 		end
 	endcase
 end
